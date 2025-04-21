@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: skyblue;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo h1 {
+  margin: 0;
+  color: rgb(7, 1, 91);
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+#menu a {
+  text-decoration: none;
+}
+
+/*contents*/
+#contents {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px skyblue;
+  text-align: center;
+}
+
+#contents h1 {
+  color: navy;
+  font-size: 30spx;
+  margin-bottom: 30px;
+}
+
+.detail img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px skyblue;
+}
+
+.detail p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: navy;
+}
+
+/* 모바일용 반응형 스타일 */
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .detail img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .detail p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/*반응형 메뉴바 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}

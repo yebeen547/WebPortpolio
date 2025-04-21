@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: skyblue;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo h1 {
+  margin: 0;
+  color: rgb(7, 1, 91);
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+#menu a {
+  text-decoration: none;
+}
+/*contents*/
+#contents {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px skyblue;
+  text-align: center;
+}
+
+.website {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(135, 207, 235, 0.3);
+  border: 2px solid skyblue;
+  border-radius: 10px;
+}
+
+.website h2 {
+  color: navy;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.website p {
+  font-size: 16px;
+  color: navy;
+}
+
+.website a {
+  color: rgb(254, 151, 169);
+  text-decoration: none;
+}
+
+.website a:hover {
+  text-decoration: underline;
+  color: #ff3399;
+}
+
+/*반응형 메뉴바 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}

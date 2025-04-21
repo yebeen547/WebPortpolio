@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: skyblue;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo h1 {
+  margin: 0;
+  color: rgb(7, 1, 91);
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+#menu a {
+  text-decoration: none;
+}
+
+/* 표 전체 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 표 머리글 스타일 */
+thead th {
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 1px solid navy;
+}
+
+/* 왼쪽 시간 컬럼 스타일 */
+.color {
+  background-color: rgb(182, 220, 236);
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 표 안의 내용 셀 */
+tbody th,
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid skyblue;
+}
+
+/* 수업 있는 칸 하이라이트 */
+tbody th:not(.color):not(:empty),
+tbody td:not(:empty) {
+  background-color: rgb(213, 228, 234);
+  color: navy;
+  border-radius: 4px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  thead th,
+  .color {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/*반응형 메뉴바 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
